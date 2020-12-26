@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>まほろば｜ログイン</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <!--    
+        <meta name="robots" content="noindex,nofollow">
+    -->
+    <!--
+        <meta property="og:url" content="ページのURL" />
+        <meta property="og:title" content="ページのタイトル" />
+        <meta property="og:type" content="ページのタイプ">
+        <meta property="og:description" content="記事の抜粋" />
+        <meta property="og:image" content="画像のURL" />
+        <meta name="twitter:card" content="カード種類" />
+        <meta name="twitter:site" content="@Twitterユーザー名" />
+        <meta property="og:site_name" content="サイト名" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="fb:app_id" content="appIDを入力">
+        opgタグ：ソーシャル流出を重視するのであれば必須
+    -->
+</head>
+
+<body>
+    <div id="headline">
+        <h1 class="position">ログイン</h1>
+        <p class="position">ここでは、あなたの所属している「チーム名」並びに「パスワード」の記入を行い、ログインを完了してください</p>
+    </div>
+    <form action="loginComplete.html" method="post" name="login">
+        <p class="position">チーム名（必須）:<br>
+        <input type="text" name="team"></p>
+        <p class="position">パスワード（必須）:<br>
+        <input type="password" name="password"></p>
+        <p class="position"><input type="submit" value="ログイン"></p>
+    </form>
+    <form action="newInform.html" method="post" name="login">
+        <p class="position">新規登録の方はこちらから:<br></p>
+        <p class="position"><input  type="submit" value="新規登録"></p>
+    </form>
+    <form action="パスワード忘れた人用のhtmlfileのリンク" method="post" name="forget">
+        <p class="position"> パスワードを忘れた方はこちらから:<br>
+        <p class="position"><input type="submit" value="手続き"></p>
+    </form>
+</body>
+</html>
