@@ -11,15 +11,14 @@
                 /* ボックスの横幅を指定する */
                 height: 50px;
                 /* ボックスの高さを指定する */
-                border-top: 2px solid #666666;
+                border-top: 1px solid black;
                 /* 境界線の上部を実線に指定する*/
-                border-right: 2px solid #666666;
+                border-right: 1px solid black;
                 /* 境界線の上部を実線に指定する*/
                 transform: rotate(45deg);
                 /* ボックスを回転させる（右向き矢印） */
 
             }
-
         </style>
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
@@ -27,35 +26,39 @@
     </head>
 
     <body>
+        <div id="headline">
+            <h1>予約申請</h1>
+        </div>
         <h1>
-            <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; ">
+            <div id="status">
                 <div class="container">
-                
-                       
-                        <div class="item">
-                            <font color="red">入力&nbsp&nbsp&nbsp</font>
-                        </div>
-                        <div>
-                            <div class="arrow"></div>
-                        </div>
-                   
-                   
+
+
+                    <div class="item">
+                        <font color="red">入力&nbsp&nbsp&nbsp</font>
+                    </div>
+                    <div>
+                        <div class="arrow"></div>
+                    </div>
+
+
                     <div>&nbsp&nbsp&nbsp確認&nbsp&nbsp&nbsp</div>
                     <div>
                         <div class="arrow"></div>
                     </div>
-                       
+
                     <div class="enter">
-                    <div>&nbsp&nbsp&nbsp完了</div>
+                        <div>&nbsp&nbsp&nbsp完了</div>
+                    </div>
                 </div>
             </div>
-                </div>
         </h1>
         <div class="sam">
             <div class="enter">
                 <p>開始:&nbsp&nbsp5:00</p>
                 <p>終了:&nbsp&nbsp7:00</p>
-                <p>球場:&nbsp&nbsp会津球場&nbsp;&nbsp;<a href="https://goo.gl/maps/BW4B1R5LdCrGYAip7" target="_blank">GoogleMapで開く</a></p>
+                <p>球場:&nbsp&nbsp会津球場&nbsp;&nbsp;<a href="https://goo.gl/maps/BW4B1R5LdCrGYAip7"
+                        target="_blank">GoogleMapで開く</a></p>
 
                 <!--   <div class="cp_tooltip"><span data-tooltip="試合を申し込みたいけど、人数が足りていない際に、必要、の欄にチェックをつけ、必要な人数を入力してください。" class="cp_tooltiptext"><form>助っ人：
             <input type="radio" name="助っ人" value="不必要"　checked> 不必要
@@ -100,7 +103,8 @@
                         <form>審判：
                             <input type="radio" name="審判" value="不必要" 　checked> 不必要
                             <input type="radio" name="審判" value="必要"> 必要
-                        </form><span class="remark">審判のご協力をして頂ける際は、&#013;不必要、にチェックをつけてください。また、審判を出すことが厳しい場合には、必要、にチェックしてください。</span>
+                        </form><span
+                            class="remark">審判のご協力をして頂ける際は、&#013;不必要、にチェックをつけてください。また、審判を出すことが厳しい場合には、必要、にチェックしてください。</span>
                     </a>
                 </div>
                 <br />
@@ -109,7 +113,8 @@
             </div>
         </div>
         <div id="enter">
-            <button type="submit" style="width:90px; padding:10px; font-size:15px" name="name" value="値"><a href="kakunin.html">内容確認</a></button>
+            <button type="submit" style="width:90px; padding:10px; font-size:15px" name="name" value="値"><a
+                    href="kakunin.html">内容確認</a></button>
         </div>
 
     </body>

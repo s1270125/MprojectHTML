@@ -1,9 +1,10 @@
 .container{
     display: flex;
-    justify-content: center;
+	justify-content: center;
+	
 }
 #enter{
-    text-align: center;
+	text-align: center;	
 }
 .cp_tooltip {
 	display: inline-block;
@@ -37,11 +38,16 @@
 	margin: 16px auto;
 	text-align: center;
 	display: block;
-	border: 1px solid #000;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 10px;
+	border: solid 1px black;
+	background: #d7e5fb;
 }
 .sam .enter {
 	text-align: left;
 	display: inline-block;
+	
 }
 .kanryou {
    text-align: center; 
@@ -68,4 +74,30 @@
     position: absolute;
     top: 50px;
     width: 12em;
+}
+
+#headline {
+        text-align: center;
+        background-color: #287acc;
+		width: 100%;
+		padding-block-end: 2px;
+		padding-block-start: 2px;
+
+}
+
+body{
+	margin: 0 auto;
+	font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', "Meiryo", 'ＭＳ Ｐゴシック', 'MS PGothic';
+	flex-wrap: wrap;
+
+}
+
+h1 #status{
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 10px;
+	border: solid 1px black;
+	padding: 10px;
+	
+
 }

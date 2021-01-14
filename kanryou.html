@@ -3,57 +3,59 @@
 
 
     <head>
-    <meta charset="utf-8">
-    <title>入力</title>
-    <style>
-        .arrow {
-            width: 50px;
-            /* ボックスの横幅を指定する */
-            height: 50px;
-            /* ボックスの高さを指定する */
-            border-top: 2px solid #666666;
-            /* 境界線の上部を実線に指定する*/
-            border-right: 2px solid #666666;
-            /* 境界線の上部を実線に指定する*/
-            transform: rotate(45deg);
-            /* ボックスを回転させる（右向き矢印） */
-        }
-    </style>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="enter.css" >
-</head>
+        <meta charset="utf-8">
+        <title>入力</title>
+        <style>
+            .arrow {
+                width: 50px;
+                /* ボックスの横幅を指定する */
+                height: 50px;
+                /* ボックスの高さを指定する */
+                border-top: 2px solid #666666;
+                /* 境界線の上部を実線に指定する*/
+                border-right: 2px solid #666666;
+                /* 境界線の上部を実線に指定する*/
+                transform: rotate(45deg);
+                /* ボックスを回転させる（右向き矢印） */
+            }
+        </style>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="enter.css">
+    </head>
 
-<body>
-    <h1>
-        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
-            <div class="container">
-                <div class="item">
-                    <font>入力&nbsp&nbsp&nbsp</font>
-                </div>
-                <div class="item">
-                    <div class="arrow"></div>
-                </div>
-                <div class="item">
-                    &nbsp&nbsp&nbsp確認&nbsp&nbsp&nbsp
-                </div>
-                <div class="item">
-                    <div class="arrow"></div>
-                </div>
-                <div class="item"><font color="red">&nbsp&nbsp&nbsp完了</font></div>
-            </div>
+    <body>
+        <div id="headline">
+            <h1>予約申請</h1>
         </div>
-    </h1>
-        <div class="kanryou">
-        <h2>ご申請ありがとうございます</h2>
-        <p>ぜひ宜しければこのアプリに関してご意見お聞かせください</p><br>
-            <button type="submit" name="name" value="値"><a href="test_reserve.html">カレンダーページへ戻る</a></button> 
+        <h1>
+            <div id="status">
+                <div class="container">
+                    <div class="item">
+                        <font>入力&nbsp&nbsp&nbsp</font>
+                    </div>
+                    <div class="item">
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="item">
+                        &nbsp&nbsp&nbsp確認&nbsp&nbsp&nbsp
+                    </div>
+                    <div class="item">
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="item">
+                        <font color="red">&nbsp&nbsp&nbsp完了</font>
+                    </div>
+                </div>
             </div>
-    
-        </body>
-        
-        
-</html>
-        
-    
-        
+        </h1>
+        <div class="kanryou">
+            <h2>ご申請ありがとうございます</h2>
+            <p>ぜひ宜しければこのアプリに関してご意見お聞かせください</p><br>
+            <button type="submit" name="name" value="値"><a href="test_reserve.html">カレンダーページへ戻る</a></button>
+        </div>
+
+    </body>
+
+
+    </html>
