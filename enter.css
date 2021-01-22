@@ -69,3 +69,10 @@
     top: 50px;
     width: 12em;
 }
+
+body{
+	background-image:url(bg-image.jpg);
+}
+h1{
+	background-image:url(h1bg.jpg);
+}
