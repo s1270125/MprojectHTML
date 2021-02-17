@@ -93,3 +93,10 @@ body {
 h1 {
   background-image: url(h1bg.jpg);
 }
+
+button {
+  width: auto;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
