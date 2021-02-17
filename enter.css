@@ -1,78 +1,77 @@
-.container{
-    display: flex;
-    justify-content: center;
+.container {
+  display: flex;
+  justify-content: center;
 }
-#enter{
-    text-align: center;
+#enter {
+  text-align: center;
 }
 .cp_tooltip {
-	display: inline-block;
+  display: inline-block;
 }
 .cp_tooltiptext {
-	position: relative;
-	cursor: pointer;
-	background: linear-gradient(transparent 60%, #f19ec2 60%);
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(transparent 60%, #f19ec2 60%);
 }
 .cp_tooltiptext::after {
-	position: absolute;
-	transition: all 0.3s ease 0s;
-	opacity: 0;
-	top: 0px;/*HOVERのスタート位置*/
-	left: 0px;
-	display: block;
-	padding: 0.2em 0.5em;
-	content: attr(data-tooltip);
-	white-space: nowrap;
-	color: #ffffff;
-	border-radius: 6px;
-	background: #1b2538;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  top: 0px; /*HOVERのスタート位置*/
+  left: 0px;
+  display: block;
+  padding: 0.2em 0.5em;
+  content: attr(data-tooltip);
+  white-space: nowrap;
+  color: #ffffff;
+  border-radius: 6px;
+  background: #1b2538;
 }
 .cp_tooltiptext:hover::after {
-	top: 26px;/*HOVER位置*/
-	opacity: 1;
+  top: 26px; /*HOVER位置*/
+  opacity: 1;
 }
-
 
 .sam {
-	margin: 16px auto;
-	text-align: center;
-	display: block;
-	border: 1px solid #000;
+  margin: 16px auto;
+  text-align: center;
+  display: block;
+  border: 1px solid #000;
 }
 .sam .enter {
-	text-align: left;
-	display: inline-block;
+  text-align: left;
+  display: inline-block;
 }
 .kanryou {
-   text-align: center; 
+  text-align: center;
 }
-
-
-
-
 
 .message {
-    position: relative;
+  position: relative;
 }
 .message span.remark {
-    display: none;
+  display: none;
 }
 .message a:hover span.remark {
-    background: none repeat scroll 0 0 #EEFFEE;
-    border: 1px solid #CCCCCC;
-    color: #000000;
-    display: block;
-    line-height: 1.2em;
-    margin: 0.5em;
-    padding: 0.5em;
-    position: absolute;
-    top: 50px;
-    width: 12em;
+  background: none repeat scroll 0 0 #eeffee;
+  border: 1px solid #cccccc;
+  color: #000000;
+  display: block;
+  line-height: 1.2em;
+  margin: 0.5em;
+  padding: 0.5em;
+  position: absolute;
+  top: 50px;
+  width: 12em;
 }
 
-body{
-	background-image:url(bg-image.jpg);
+.tooltip {
+  color: rgb(105, 216, 179);
 }
-h1{
-	background-image:url(h1bg.jpg);
+
+body {
+  background-image: url(bg-image.jpg);
+}
+h1 {
+  background-image: url(h1bg.jpg);
 }

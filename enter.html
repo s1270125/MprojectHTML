@@ -22,6 +22,7 @@
         </style>
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="enter.css">
     </head>
 
@@ -72,9 +73,9 @@
                 <option value="4">それ以上</option>
             </select></form></span></div> -->
                 <div class="message">
-                    <a href="#">
                         <div>
-                            <form>助っ人：
+                            <form>助っ人 <a class="tooltip"><i class="fas fa-question-circle"></i><span
+                                    class="remark">試合を申し込みたいけど、人数が足りていない際に、必要、の欄にチェックをつけ、必要な人数を入力してください。</span></a>：
                                 <input type="radio" name="助っ人" value="不必要" 　checked> 不必要
                                 <input type="radio" name="助っ人" value="必要"> 必要
 
@@ -87,9 +88,6 @@
                                 </select>
                             </form>
                         </div>
-
-                        <span class="remark">試合を申し込みたいけど、人数が足りていない際に、必要、の欄にチェックをつけ、必要な人数を入力してください。</span>
-                    </a>
                 </div>
 
 
@@ -99,15 +97,12 @@
             <input type="radio" name="審判" value="必要"> 必要
         </form></span></div>  -->
                 <div class="message">
-                    <a href="#">
-                        <form>審判：
+                        <form>審判 <a class="tooltip"><i class="fas fa-question-circle"></i><span class="remark">審判のご協力をして頂ける際は、&#013;不必要、にチェックをつけてください。また、審判を出すことが厳しい場合には、必要、にチェックしてください。</span></a>：
                             <input type="radio" name="審判" value="不必要" 　checked> 不必要
                             <input type="radio" name="審判" value="必要"> 必要
-                        </form><span
-                            class="remark">審判のご協力をして頂ける際は、&#013;不必要、にチェックをつけてください。また、審判を出すことが厳しい場合には、必要、にチェックしてください。</span>
-                    </a>
+                        </form>
                 </div>
-                <br />
+                
 
 
             </div>
