@@ -155,12 +155,12 @@ table caption {
 }
 
 table .possible {
-  background-color: #287acc;
+  background-color: #5c93c9;
   color: white;
 }
 
 table .possible:hover {
-  background: silver;
+  background: #287acc;
   /*背景色をシルバーに*/
   text-decoration: none;
   /*下線を消す*/
