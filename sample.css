@@ -65,9 +65,10 @@ body {
 #menu {
   /*border-left: solid 5px orange;
         border-bottom: solid 5px gray;*/
-  border-bottom: 5px solid #050d15;
+  border-bottom: 5px solid #506376;
   box-sizing: border-box;
-  background-color: #506376;
+  background-color: #103253;
+  padding: 20px 0;
 }
 
 .nav ul li {
@@ -78,21 +79,15 @@ body {
   /*文字を太字に*/
   color: white;
   padding: 10px 0;
+  background: #050d1598;
+  margin-bottom: 1px;
 }
 
 .nav ul li:hover {
-  background: silver;
+  background: #287acc;
   /*背景色をシルバーに*/
   text-decoration: none;
   /*下線を消す*/
-}
-
-.gra1 {
-  background: #287acc;
-}
-
-.gra2 {
-  background: #0f5daa;
 }
 
 .right-colum {
