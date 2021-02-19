@@ -31,6 +31,20 @@
         <h2 class="snsIcon"><span class="mar-20px"><i class="far fa-envelope"></span></i><i
                 class="fab fa-instagram"></i></h2>
     </div>
+    <ol class="bread" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="test_reserve.html"><!--今はまだファイル名-->
+                <span itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+    </ol>
+    <!--ホームに滞在中は非表示-->
+    <style>
+        .bread {
+            display: none;
+        }
+    </style>
     <div class="nav">
         　<ul>
             <li id="menu">MENU</li>
