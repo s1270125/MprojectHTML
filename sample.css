@@ -290,6 +290,7 @@ table .possible:hover {
   background: #5c93c9;
   box-sizing: border-box;
   border-radius: 6px;
+  margin-bottom: 30px;
 }
 
 .time-schedule .sch_title {
