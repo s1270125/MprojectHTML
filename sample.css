@@ -90,12 +90,20 @@ body {
   /*下線を消す*/
 }
 
+.nav ul a {
+  color: white;
+}
+
 .right-colum {
   width: 68%;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*test_reserve.html*/
