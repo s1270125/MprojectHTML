@@ -100,3 +100,18 @@ button {
   font-size: 20px;
   margin-bottom: 70px;
 }
+
+div#status {
+  padding: 10px;
+  border: solid 2px #666666;
+  border-radius: 4px;
+  margin: auto 15px;
+}
+
+.item.passive {
+  color: #666666;
+}
+
+.item.active {
+  color: red;
+}
