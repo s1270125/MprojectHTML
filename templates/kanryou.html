@@ -21,7 +21,7 @@
         </style>
         <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="enter.css">
+        <link rel="stylesheet" href="/static/css/enter.css">
     </head>
 
     <body>
@@ -50,7 +50,7 @@
         <div class="kanryou">
             <h2>ご申請ありがとうございます</h2>
             <p>ぜひ宜しければこのアプリに関してご意見お聞かせください</p><br>
-            <button type="submit" name="name" value="値"><a href="test_reserve.html">カレンダーページへ戻る</a></button>
+            <button type="submit" name="name" value="値"><a href="{{url_for('redirects')}}">カレンダーページへ戻る</a></button>
         </div>
 
     </body>

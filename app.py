@@ -32,7 +32,7 @@ def kakunin():
     else:
         return render_template("enter.html", warring="選択をしてください")
 
-    return render_template("kakunin.html", guest=helper, judge=judge)
+    return render_template("kakunin.html", assistant=helper, judge=judge)
 
 
 @app.route("/kanryou")

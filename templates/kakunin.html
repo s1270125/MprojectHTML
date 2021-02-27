@@ -1,88 +1,120 @@
 <!DOCTYPE html>
-    <html lang="ja">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>入力</title>
+    <style>
+      .arrow {
+        width: 45px;
+        /* ボックスの横幅を指定する */
+        height: 45px;
+        /* ボックスの高さを指定する */
+        border-top: 2px solid #666666;
+        /* 境界線の上部を実線に指定する*/
+        border-right: 2px solid #666666;
+        /* 境界線の上部を実線に指定する*/
+        transform: rotate(45deg);
+        /* ボックスを回転させる（右向き矢印） */
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/enter.css" />
+  </head>
 
-
-    <head>
-        <meta charset="utf-8">
-        <title>入力</title>
-        <style>
-            .arrow {
-                width: 45px;
-                /* ボックスの横幅を指定する */
-                height: 45px;
-                /* ボックスの高さを指定する */
-                border-top: 2px solid #666666;
-                /* 境界線の上部を実線に指定する*/
-                border-right: 2px solid #666666;
-                /* 境界線の上部を実線に指定する*/
-                transform: rotate(45deg);
-                /* ボックスを回転させる（右向き矢印） */
-            }
-        </style>
-        <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset-min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="enter.css">
-    </head>
-
-    <body>
-        <h1>
-            <div id="status">
-                <div class="container">
-                    <div class="item passive">
-                        入力&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    </div>
-                    <div class="item">
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="item active">
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp確認&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    </div>
-                    <div class="item">
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp完了</div>
-                </div>
-            </div>
-        </h1>
-
-        <div id="enter">
-            <fieldset>
-                <legend style="background-color: #287acc; padding: 3px 10px; border-radius: 5px; color: #ffffff;">入力内容
-                </legend>
-                <p>開始:&nbsp&nbsp5:00</p>
-                <p>終了:&nbsp&nbsp7:00</p>
-                <p>球場:&nbsp&nbsp会津球場<br><a href="https://goo.gl/maps/DqoA8rEDgTVzboUcA" target="_blank">GoogleMapで開く</a>
-                </p>
-                <p><b>助っ人</b>:　　不必要</p>
-                <p><b>審判</b>:　　　不必要</p>
-            </fieldset>
+  <body>
+    <h1>
+      <div id="status">
+        <div class="container">
+          <div class="item passive">入力&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+          <div class="item">
+            <div class="arrow"></div>
+          </div>
+          <div class="item active">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp確認&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          </div>
+          <div class="item">
+            <div class="arrow"></div>
+          </div>
+          <div class="item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp完了</div>
         </div>
-        <br>
+      </div>
+    </h1>
 
-        <div id="enter">
-            <fieldset>
-                <legend style="background-color: #287acc; padding: 3px 10px; border-radius: 5px; color: #ffffff;">お客様情報
-                </legend>
-                <p>チーム名　　　　花人</p>
-                <p>代表者指名　　　花人　太郎</p>
-                <p>代表者連絡先　　080-・・・</p>
-            </fieldset>
-        </div>
-        <br>
+    <div id="enter">
+      <fieldset>
+        <legend
+          style="
+            background-color: #287acc;
+            padding: 3px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+          "
+        >
+          入力内容
+        </legend>
+        <p>開始:&nbsp&nbsp5:00</p>
+        <p>終了:&nbsp&nbsp7:00</p>
+        <p>
+          球場:&nbsp&nbsp会津球場<br /><a
+            href="https://goo.gl/maps/DqoA8rEDgTVzboUcA"
+            target="_blank"
+            >GoogleMapで開く</a
+          >
+        </p>
+        <p><b>助っ人</b>:　　{{assistant}}</p>
+        <p><b>審判</b>:　　　{{judge}}</p>
+      </fieldset>
+    </div>
+    <br />
 
-        <div id="enter">
-            <fieldset>
-                <legend style="background-color: #287acc; padding: 3px 10px; border-radius: 5px; color: #ffffff;">
-                    まほろばからの注意事項</legend>
-                <p>天気・球場の都合・こちらの人数不足等の理由で、試合開始時間の変更、もしくは予約がキャンセルになる場合がありますがご了承ください。</p>
-            </fieldset>
-        </div>
+    <div id="enter">
+      <fieldset>
+        <legend
+          style="
+            background-color: #287acc;
+            padding: 3px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+          "
+        >
+          お客様情報
+        </legend>
+        <p>チーム名　　　　花人</p>
+        <p>代表者指名　　　花人　太郎</p>
+        <p>代表者連絡先　　080-・・・</p>
+      </fieldset>
+    </div>
+    <br />
 
-        <div id="enter">
-            <button type="submit" name="name" value="値"><a
-                    href="kanryou.html">完了</a></button>
-        </div>
+    <div id="enter">
+      <fieldset>
+        <legend
+          style="
+            background-color: #287acc;
+            padding: 3px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+          "
+        >
+          まほろばからの注意事項
+        </legend>
+        <p>
+          天気・球場の都合・こちらの人数不足等の理由で、試合開始時間の変更、もしくは予約がキャンセルになる場合がありますがご了承ください。
+        </p>
+      </fieldset>
+    </div>
 
-    </body>
-
-    </html>
+    <div id="enter">
+      <button type="submit" name="name" value="値">
+        <a href="{{url_for('kanryou')}}">完了</a>
+      </button>
+    </div>
+  </body>
+</html>
