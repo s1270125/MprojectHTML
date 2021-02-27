@@ -21,7 +21,7 @@
             opgタグ：ソーシャル流出を重視するのであれば必須
         -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="sample.css" rel="stylesheet">
+    <link href="/static/css/sample.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
     </div>
     <ol class="bread" itemscope itemtype="https://schema.org/BreadcrumbList">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="test_reserve.html"><!--今はまだファイル名-->
+            <a itemprop="item" href="{{url_for('redirects')}}"><!--今はまだファイル名-->
                 <span itemprop="name">ホーム</span>
             </a>
             <meta itemprop="position" content="1" />
@@ -48,7 +48,7 @@
     <div class="nav">
         　<ul>
             <li id="menu">MENU</li>
-            <a href="test_reserve.html">
+            <a href="{{url_for('redirects')}}">
                 <li>予約申請
                 </li>
             </a>
