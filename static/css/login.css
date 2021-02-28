@@ -1,21 +1,26 @@
 body {
-        margin: 0 auto;
-        font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
-        display: flex;
-        flex-wrap: wrap;
+  margin: 0 auto;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #headline {
-    text-align: center;
-    background-color: #287acc;
-    width: 100%;
-    display: inline-block;
-    max-height: 130px;
-
+  text-align: center;
+  background-color: #287acc;
+  width: 100%;
+  display: inline-block;
+  max-height: 130px;
 }
 
-a{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
+a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.war {
+  color: red;
 }

@@ -38,6 +38,23 @@ def kakunin():
 def kanryou():
     return render_template("kanryou.html")
 
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+
+@app.route("/check", methods=["POST"])
+def check():
+    account = {"team": "まほろば改", "password": "9h49huvh"}  # テスト用
+    enter_team = request.form.get("team")
+    enter_pass = request.form.get("password")
+    if (enter_team == account["team"]) and (enter_pass == account["password"]):
+        return render_template("loginComplete.html")
+    else:
+        return render_template("login.html", warring="チーム名とパスワードを正しく入力して下さい")
+
+
 # 関数を引数にトップページに返している
 
 
