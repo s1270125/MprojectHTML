@@ -17,13 +17,12 @@ def enter():
 def kakunin():
     number_to_str = {"1": "一人必要です", "2": "二人必要です",
                      "3": "三人必要です", "4": "四人以上の助っ人が必要です"}
-    hazard = "DIDNOT CHECKED"
     if request.method == "POST":
-        # 何も入力がないとhazardが代入される
-        helper = request.form.get("assistant", hazard)
-        judge = request.form.get("judge", hazard)
+        # 何も入力がないとNoneが代入される
+        helper = request.form.get("assistant")
+        judge = request.form.get("judge")
         # 入力がなかったときにメッセージを代入
-        if (helper == hazard) or (judge == hazard):
+        if (helper is None) or (judge is None):
             return render_template("enter.html", warring="選択をしてください")
         # 助っ人が必要な時は「必要」を選択リストで選択された「必要な人数」で上書きしている
         elif helper == "必要":
