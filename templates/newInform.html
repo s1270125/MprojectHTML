@@ -1,43 +1,52 @@
 <html>
-
-<head>
+  <head>
     <title>まほろば｜新規登録</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="login.css" type="text/css">
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/static/css/login.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <div id="headline">
-        <h1 class="position">新規登録</h1>
-        <p class="position">ここでは、新規登録を受け付けています。自チームの情報に加えて、責任者の方の情報も合わせて、ご登録お願いします</p>
+      <h1 class="position">新規登録</h1>
+      <p class="position">
+        ここでは、新規登録を受け付けています。自チームの情報に加えて、責任者の方の情報も合わせて、ご登録お願いします
+      </p>
     </div>
-    <a>
-        <p class="position">チーム名:<br>
-            <input type="text" name="team">
+    <form
+      action="{{url_for('createAccount')}}"
+      method="post"
+      name="newInformComplete"
+    >
+      <a>
+        <p class="position">
+          チーム名:<br />
+          <input type="text" name="team" />
         </p>
-    </a>
-    <a>
-        <p class="position">代表者氏名:<br>
-            <input type="text" name="leader">
+      </a>
+      <a>
+        <p class="position">
+          代表者氏名:<br />
+          <input type="text" name="leader" />
         </p>
-    </a>
-    <a>
-        <p class="position">代表者連絡先:<br>
-            <input type="text" name="form">
+      </a>
+      <a>
+        <p class="position">
+          代表者連絡先:<br />
+          <input type="email" name="mail" />
         </p>
-    </a>
-    <a>
-        <p class="position">パスワード:<br>
-            <input type="password" name="password">
+      </a>
+      <a>
+        <p class="position">
+          パスワード:<br />
+          <input type="password" name="password" />
         </p>
-    </a>
-    <a>
-        <form action="newInformComplete.html" method="post" name="newInformComplete">
-            <p class="position"><input type="submit" value="登録"></p>
-        </form>
-    </a>
-</body>
-
+      </a>
+      <span class="war">{{warring}}</span>
+      <a>
+        <p class="position"><input type="submit" value="登録" /></p>
+      </a>
+    </form>
+  </body>
 </html>

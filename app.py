@@ -55,6 +55,22 @@ def check():
         return render_template("login.html", warring="チーム名とパスワードを正しく入力して下さい")
 
 
+@app.route("/create", methods=["GET", "POST"])
+def createAccount():
+    if request.method == "POST":
+        team = request.form.get("team")
+        leader = request.form.get("leader")
+        mail = request.form.get("mail")
+        password = request.form.get("password")
+        if (team == "") or (leader == "") or (mail == "") or (password == ""):
+            return render_template("newInform.html", warring="各項目の入力をお願いします")
+        else:
+            return render_template("newInformComplete.html", team=team)
+
+    else:
+        return render_template("newInform.html")
+
+
 # 関数を引数にトップページに返している
 
 
