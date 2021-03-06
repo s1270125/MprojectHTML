@@ -25,7 +25,7 @@ class reserve:
 reserve = reserve()
 reserve.year = 2021
 reserve.month = 3
-reserve.day = 11
+reserve.day = 23
 
 # 指定された年と月をもとにカレンダーを作成
 
@@ -54,7 +54,7 @@ def buildCalender(year, month):
         # 予約日があったら、特定のhtmlを代入
         elif i == reserve.day and month == reserve.month and year == reserve.year:
             dates.append(Markup(
-                '<td class="possible"><form action="detail" method="POST"><input type="submit" name="day" value="{}"></form></td>'.format(str(i))))
+                '<td class="possible"><form action="detail" method="POST"><input type="submit" name="day" value="{}"><input type="hidden" name="year" value="{}"/><input type="hidden" name="month" value="{}"/></form></td>'.format(str(i), str(year), str(month))))
         else:
             dates.append('<td>{}</td>'.format(str(i)))
 
@@ -108,7 +108,10 @@ def index():
 
 @app.route('/detail', methods=["GET", "POST"])
 def detail():
-    return render_template("test_schedule.html")
+    year = request.form.get("year")
+    month = request.form.get("month")
+    day = request.form.get("day")
+    return render_template("test_schedule.html", selectYear=year, selectMonth=month, selectDay=day)
 
 
 @app.route('/enter')
