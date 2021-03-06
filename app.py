@@ -106,7 +106,7 @@ def index():
         return render_template('test_reserve.html', calender=buildCalender(selectYear, selectMonth), selectYear=selectYear, selectMonth=selectMonth)
 
 
-@app.route('/detail', methods=["POST"])
+@app.route('/detail', methods=["GET", "POST"])
 def detail():
     return render_template("test_schedule.html")
 
