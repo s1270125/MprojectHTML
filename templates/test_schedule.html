@@ -3,6 +3,7 @@
   <head>
     <title>まほろば｜日程詳細</title>
     <meta charset="UTF-8" />
+    <meta lang="ja" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!--    
@@ -61,7 +62,7 @@
         <a href="{{url_for('redirects')}}">
           <li>予約申請</li>
         </a>
-        <a href="">
+        <a href="{{url_for('reserveList')}}">
           <li>予約状況</li>
         </a>
         <li>Q&A</li>
@@ -94,7 +95,7 @@
                   >map<i class="fas fa-external-link-alt"></i
                 ></a>
               </p>
-              <a href="enter.html" class="btn btn--orange">予約</a>
+              <a href="{{url_for('enter')}}" class="btn btn--orange">予約</a>
             </div>
           </li>
           <li>
@@ -113,7 +114,7 @@
                   >map<i class="fas fa-external-link-alt"></i
                 ></a>
               </p>
-              <a href="enter.html" class="btn btn--orange">予約</a>
+              <a href="{{url_for('enter')}}" class="btn btn--orange">予約</a>
             </div>
           </li>
           <li>
@@ -132,7 +133,7 @@
                   >map<i class="fas fa-external-link-alt"></i
                 ></a>
               </p>
-              <a href="enter.html" class="btn btn--orange">予約</a>
+              <a href="{{url_for('enter')}}" class="btn btn--orange">予約</a>
             </div>
           </li>
         </ul>

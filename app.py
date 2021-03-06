@@ -114,6 +114,11 @@ def detail():
     return render_template("test_schedule.html", selectYear=year, selectMonth=month, selectDay=day)
 
 
+@app.route("/list", methods=["GET"])
+def reserveList():
+    return render_template("test_reserve_list.html")
+
+
 @app.route('/enter')
 def enter():
     return render_template('enter.html')
