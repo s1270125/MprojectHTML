@@ -54,7 +54,7 @@ def buildCalender(year, month):
         # 予約日があったら、特定のhtmlを代入
         elif i == reserve.day and month == reserve.month and year == reserve.year:
             dates.append(Markup(
-                '<td class="possible"><form><input type="button" name="day" value="{}"></form></td>'.format(str(i))))
+                '<td class="possible"><form action="detail" method="POST"><input type="submit" name="day" value="{}"></form></td>'.format(str(i))))
         else:
             dates.append('<td>{}</td>'.format(str(i)))
 
@@ -104,6 +104,11 @@ def index():
     # 初めてこのページに訪れた場合はrequest.args.get("method")は何もないので今日の年と月をもとにカレンダーを作成する
     else:
         return render_template('test_reserve.html', calender=buildCalender(selectYear, selectMonth), selectYear=selectYear, selectMonth=selectMonth)
+
+
+@app.route('/detail', methods=["POST"])
+def detail():
+    return render_template("test_schedule.html")
 
 
 @app.route('/enter')

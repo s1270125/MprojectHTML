@@ -197,7 +197,7 @@ table .possible:hover {
   /*下線を消す*/
 }
 
-input[type="button"] {
+input[type="submit"] {
   font-size: 25px;
   border-color: transparent;
   background: rgb(92, 147, 201);
@@ -211,7 +211,7 @@ input[type="button"] {
   height: 100%;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
   /* color: blue; */
   background: #287acc;
   text-decoration: none;

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>まほろば｜日程詳細</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!--    
         <meta name="robots" content="noindex,nofollow">
     -->
@@ -22,91 +21,121 @@
         <meta property="fb:app_id" content="appIDを入力">
         opgタグ：ソーシャル流出を重視するのであれば必須
     -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="sample.css" rel="stylesheet">
-</head>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="/static/css/sample.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div id="headline">
-        <h1>日程の詳細</h1>
+      <h1>日程の詳細</h1>
     </div>
     <ol class="bread" itemscope itemtype="https://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="test_reserve.html">
-                <span itemprop="name">ホーム</span>
-            </a>
-            <meta itemprop="position" content="1" />
-        </li>
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="test_schedule.html">
-                <span itemprop="name">予定の詳細</span>
-            </a>
-            <meta itemprop="position" content="2" />
-        </li>
+      <li
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a itemprop="item" href="test_reserve.html">
+          <span itemprop="name">ホーム</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a itemprop="item" href="test_schedule.html">
+          <span itemprop="name">予定の詳細</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
     </ol>
     <div class="nav">
-        　 <ul>
-            <li id="menu">MENU</li>
-            <a href="test_reserve.html">
-                <li>予約申請
-                </li>
-            </a>
-            <a href="test_reserve_list.html">
-                <li>予約状況
-                </li>
-            </a>
-            <li>Q&A</li>
-            <a href="login.html">
-                <li>ログイン
-                </li>
-            </a>
-        </ul>
+      　
+      <ul>
+        <li id="menu">MENU</li>
+        <a href="{{url_for('redirects')}}">
+          <li>予約申請</li>
+        </a>
+        <a href="">
+          <li>予約状況</li>
+        </a>
+        <li>Q&A</li>
+        <a href="{{url_for('login')}}">
+          <li>ログイン</li>
+        </a>
+      </ul>
     </div>
     <div class="right-colum">
-        <h2 class="yearAndMonthAndDay"><i class="fas fa-chevron-left"></i> 2020年11月21日 <i
-                class="fas fa-chevron-right"></i></h2>
-        <div class="brock">
-            <ul class="time-schedule">
-                <li>
-                    <span class="time">5:00</span>
-                    <div class="sch_box">
-                        <p class="sch_title">vs まほろば</p>
-                        <p class="sch_tx">
-                            <i class="far fa-clock"></i>5:00 ~ 7:00
-                            <br><i class="fas fa-map-marker-alt"></i>あいづ球場 <a
-                                href="https://www.google.com/maps/place/37%C2%B027'37.5%22N+139%C2%B055'33.2%22E/@37.4604212,139.9237093,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d37.4604169!4d139.9258977?hl=ja"
-                                target="_blank" class="map">map<i class="fas fa-external-link-alt"></i></a>
-                        </p>
-                        <a href="enter.html" class="btn btn--orange">予約</a>
-                    </div>
-                </li>
-                <li>
-                    <span class="time">12:00</span>
-                    <div class="sch_box">
-                        <p class="sch_title">vs まほろば</p>
-                        <p class="sch_tx">
-                            <i class="far fa-clock"></i>12:00 ~ 14:00
-                            <br><i class="fas fa-map-marker-alt"></i>門田緑地 <a
-                                href="https://www.google.com/maps/place/37%C2%B028'02.7%22N+139%C2%B054'27.9%22E/@37.4674191,139.9071968,19z/data=!3m1!4b1!4m13!1m6!3m5!1s0x0:0xc483c9322bbdf76a!2z6ZaA55Sw57eR5Zyw44Kw44Op44Km44Oz44OJ!8m2!3d37.4674123!4d139.9077469!3m5!1s0x0:0x0!7e2!8m2!3d37.4674184!4d139.9077439?hl=ja"
-                                target="_blank" class="map">map<i class="fas fa-external-link-alt"></i></a>
-                        </p>
-                        <a href="enter.html" class="btn btn--orange">予約</a>
-                    </div>
-                </li>
-                <li>
-                    <span class="time">17:00</span>
-                    <div class="sch_box">
-                        <p class="sch_title">vs まほろば</p>
-                        <p class="sch_tx">
-                            <i class="far fa-clock"></i>17:00 ~ 20:00
-                            <br><i class="fas fa-map-marker-alt"></i>第二球場 <a
-                                href="https://www.google.com/maps/place/37%C2%B029'15.9%22N+139%C2%B056'13.2%22E/@37.4877642,139.9347993,17z/data=!3m1!4b1!4m13!1m6!3m5!1s0x0:0x333c6fff204fda85!2z6ba044O25Z-O5YWs5ZyS56ys77yS55CD5aC0!8m2!3d37.4877386!4d139.9369769!3m5!1s0x0:0x0!7e2!8m2!3d37.4877603!4d139.9369877?hl=ja"
-                                target="_blank" class="map">map<i class="fas fa-external-link-alt"></i></a>
-                        </p>
-                        <a href="enter.html" class="btn btn--orange">予約</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <h2 class="yearAndMonthAndDay">
+        <i class="fas fa-chevron-left"></i> 2020年11月21日
+        <i class="fas fa-chevron-right"></i>
+      </h2>
+      <div class="brock">
+        <ul class="time-schedule">
+          <li>
+            <span class="time">5:00</span>
+            <div class="sch_box">
+              <p class="sch_title">vs まほろば</p>
+              <p class="sch_tx">
+                <i class="far fa-clock"></i>5:00 ~ 7:00 <br /><i
+                  class="fas fa-map-marker-alt"
+                ></i
+                >あいづ球場
+                <a
+                  href="https://www.google.com/maps/place/37%C2%B027'37.5%22N+139%C2%B055'33.2%22E/@37.4604212,139.9237093,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d37.4604169!4d139.9258977?hl=ja"
+                  target="_blank"
+                  class="map"
+                  >map<i class="fas fa-external-link-alt"></i
+                ></a>
+              </p>
+              <a href="enter.html" class="btn btn--orange">予約</a>
+            </div>
+          </li>
+          <li>
+            <span class="time">12:00</span>
+            <div class="sch_box">
+              <p class="sch_title">vs まほろば</p>
+              <p class="sch_tx">
+                <i class="far fa-clock"></i>12:00 ~ 14:00 <br /><i
+                  class="fas fa-map-marker-alt"
+                ></i
+                >門田緑地
+                <a
+                  href="https://www.google.com/maps/place/37%C2%B028'02.7%22N+139%C2%B054'27.9%22E/@37.4674191,139.9071968,19z/data=!3m1!4b1!4m13!1m6!3m5!1s0x0:0xc483c9322bbdf76a!2z6ZaA55Sw57eR5Zyw44Kw44Op44Km44Oz44OJ!8m2!3d37.4674123!4d139.9077469!3m5!1s0x0:0x0!7e2!8m2!3d37.4674184!4d139.9077439?hl=ja"
+                  target="_blank"
+                  class="map"
+                  >map<i class="fas fa-external-link-alt"></i
+                ></a>
+              </p>
+              <a href="enter.html" class="btn btn--orange">予約</a>
+            </div>
+          </li>
+          <li>
+            <span class="time">17:00</span>
+            <div class="sch_box">
+              <p class="sch_title">vs まほろば</p>
+              <p class="sch_tx">
+                <i class="far fa-clock"></i>17:00 ~ 20:00 <br /><i
+                  class="fas fa-map-marker-alt"
+                ></i
+                >第二球場
+                <a
+                  href="https://www.google.com/maps/place/37%C2%B029'15.9%22N+139%C2%B056'13.2%22E/@37.4877642,139.9347993,17z/data=!3m1!4b1!4m13!1m6!3m5!1s0x0:0x333c6fff204fda85!2z6ba044O25Z-O5YWs5ZyS56ys77yS55CD5aC0!8m2!3d37.4877386!4d139.9369769!3m5!1s0x0:0x0!7e2!8m2!3d37.4877603!4d139.9369877?hl=ja"
+                  target="_blank"
+                  class="map"
+                  >map<i class="fas fa-external-link-alt"></i
+                ></a>
+              </p>
+              <a href="enter.html" class="btn btn--orange">予約</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
+  </body>
+</html>
