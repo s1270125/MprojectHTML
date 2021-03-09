@@ -46,23 +46,29 @@
             display: none;
         }
     </style>
-    <div class="nav">
-        　<ul>
-            <li id="menu">MENU</li>
-            <a href="{{url_for('redirects')}}">
-                <li>予約申請
-                </li>
-            </a>
-            <a href="{{url_for('reserveList')}}">
-                <li>予約状況
-                </li>
-            </a>
-            <li>Q&A</li>
-            <a href="{{url_for('login')}}">
-                <li>ログイン
-                </li>
-            </a>
-        </ul>
+    <div class="left-colum">
+        <div class="nav">
+            　<ul>
+                <li id="menu">MENU</li>
+                <a href="{{url_for('redirects')}}">
+                    <li>予約申請
+                    </li>
+                </a>
+                <a href="{{url_for('reserveList')}}">
+                    <li>予約状況
+                    </li>
+                </a>
+                <li>Q&A</li>
+                <a href="{{url_for('login')}}">
+                    <li>ログイン
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div id = "forecast">
+        <h2>会津若松の天気</h2>
+        <ol><span id="day">日にち</span><span id="icon"><image src="http://openweathermap.org/img/wn/10d@2x.png"></span><span id="description">快晴</span><span id="tempreture"><i class="fas fa-temperature-high"></i> 3°</span><span id="wind"><i class="fas fa-wind"></i> 30m/s</span></ol>
+        </div>
     </div>
     <div class="right-colum">
         <div class="brock">

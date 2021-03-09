@@ -49,7 +49,7 @@ body {
   text-decoration: underline;
 }
 
-.nav {
+.left-colum {
   width: 28%;
   border-right: 2px solid #506376;
   padding-right: 20px;
@@ -115,6 +115,55 @@ a:hover {
 
 #headline .snsIcon .mar-20px {
   margin-right: 20px;
+}
+
+div#forecast {
+  width: 88%;
+  border: solid gray;
+  margin-left: 40px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+  background: darkgray;
+}
+
+#forecast ol {
+  padding: 10px 20px;
+  margin: 5px 5px;
+  display: inline-block;
+  border: solid gray;
+  border-radius: 20px;
+}
+
+#forecast span#day {
+  width: 100%;
+  display: inline-block;
+  font-size: larger;
+}
+
+#forecast img {
+  width: 40%;
+  display: inline-block;
+  float: left;
+}
+
+#forecast span#description {
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin: 20px 10px;
+  font-size: x-large;
+}
+
+#forecast span#wind {
+  width: 30%;
+  display: inline-block;
+}
+
+#forecast span#tempreture {
+  width: 30%;
+  display: inline-block;
 }
 
 .right-colum table {
