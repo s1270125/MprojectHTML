@@ -35,7 +35,7 @@ def buildCalender(year, month):
     firstday = date(year, month, 1)
     # 月の末日を作成
     lastday = firstday + relativedelta(months=1) - timedelta(days=1)
-    weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sta"]
+    weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     dates = []
     # 日曜日から月の最初の日を詮索、違ったら空白を挿入
     for week in weeks:
